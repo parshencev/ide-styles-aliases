@@ -1,0 +1,43 @@
+{
+  "name": "ide-styles-aliases",
+  "type": "module",
+  "preferGlobal": true,
+  "bin": {
+    "cli-name": "ide-styles-aliases"
+  },
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "version": "1.0.0",
+  "description": "add symbolic link to your sass (or other) vars",
+  "scripts": {
+    "postinstall": "npm link ide-styles-aliases",
+    "build": "tsc -p src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parshencev/ide-styles-aliases.git"
+  },
+  "keywords": [
+    "ide",
+    "aliases",
+    "paths",
+    "short-imports"
+  ],
+  "author": "parshencev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parshencev/ide-styles-aliases/issues"
+  },
+  "homepage": "https://github.com/parshencev/ide-styles-aliases#readme",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "commander": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/commander": "^2.12.2",
+    "@types/node": "^17.0.0",
+    "tsc": "^2.0.3",
+    "typescript": "^4.5.4"
+  }
+}
